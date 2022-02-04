@@ -1,4 +1,5 @@
 module.exports = {
+  jit: true,
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
@@ -51,6 +52,7 @@ module.exports = {
       },
       spacing: {
         '128': '35rem',
+        '256': '70rem',
       }
     },
 
