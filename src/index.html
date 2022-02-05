@@ -9,11 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" />
   </head>
 
   <body class="h-full w-full font-rubik">
-    <header class="container px-4 mx-auto">
-      <div class="h-12 justify-between items-center border-b-2 border-blue-100 hidden md:flex">
+    <header class="container">
+      <div class="h-12 justify-between items-center border-b-2 border-blue-100 hidden lg:flex">
         <ul class="nav flex gap-5 flex-shrink-0 text-sm text-gray-500">
           <li>
             <a class="nav-link ps-0" href="about-us.html">About</a>
@@ -72,7 +75,7 @@
           </a>
           <span> Emre Kesler </span>
         </div>
-        <ul class="nav hidden md:flex gap-8 flex-shrink-0 text-base font-medium text-gray-500">
+        <ul class="nav hidden lg:flex gap-8 flex-shrink-0 text-base font-medium text-gray-500">
           <li>
             <a class="nav-link ps-0" href="#">Home</a>
           </li>
@@ -99,34 +102,26 @@
         </div>
       </div>
     </header>
-    <main class="container px-4 mx-auto">
-      <div class="rounded flex flex-col md:flex-row items-center text-center p-3 bg-blue-100">
-        <button class="bg-blue-500 text-white items-center rounded text-tiny mx-2 p-1 px-5">Trending:</button>
+    <main class="container mx-auto">
+      <div class="rounded flex flex-col md:flex-row items-center text-center p-2 bg-blue-100">
+        <button class="bg-blue-500 text-white items-center rounded text-tiny p-1 px-4 mr-3">Trending:</button>
         <div class="flex justify-between w-full">
-          <a class="text-gray-700" href="#"> The most common business debate isn't as black and white as you might think </a>
-          <div class="hidden md:flex justify-between gap-1 items-center mx-2">
-            <button class="h-4 w-4 bg-white rounded-full flex justify-center items-center">
-              <img
-                class="h-2 w-2"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAQElEQVQ4jWNgoCMwY2Bg8CBXsxEDA8NyBgYGzlHNxGteycDAwEGMYiZybCDWFSsYyPTCqCG4gRkDA4MnJQZgBQDJ3Qq8i88vuAAAAABJRU5ErkJggg=="
-              />
-            </button>
-            <button class="h-4 w-4 bg-white rounded-full flex justify-center items-center">
-              <img
-                class="h-2 w-2"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAATElEQVQ4jWNgoBAwYxHzZGBgEGJgYHhKrqFsDAwMSxgYGMzJNWDUEOyAg4GBYSUDA4MRugQTJaYSC9gZKPDCSNTMwADJTGbkaiYZAACo6At3lAp1SQAAAABJRU5ErkJggg=="
-              />
-            </button>
+          <div class="tiny-slider w-full">
+            <div class="tiny-slider-inner text-center md:text-left opacity-80 w-full">
+              <a href="#">The most common business debate isn't as black and white as you might think</a>
+              <a href="#">How the 10 worst business fails of all time could have been prevented </a>
+              <a href="#">The most common business debate isn't as black and white as you might think </a>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="grid md:grid-cols-2 md:grid-rows-1 gap-6 pt-10 h-full md:h-128">
-        <div class="h-[400px] md:h-full rounded">
-          <div class="h-full bg-blog1 bg-center bg-cover rounded-xl flex flex-col items-start justify-end p-4 md:p-10">
-            <button class="bg-cpurple-500 text-white items-center rounded text-tiny px-2 mb-2">• Technology</button>
+      <div class="grid lg:grid-cols-2 lg:grid-rows-1 gap-6 pt-10 h-full md:h-128">
+        <div class="h-[400px] md:h-[560px] rounded">
+          <div class="h-full bg-blog1 bg-center bg-cover rounded-xl flex flex-col items-start justify-end p-4 md:p-8">
+            <button class="bg-purple-500 text-white items-center rounded text-tiny px-2 mb-2">• Technology</button>
 
-            <p class="text-white text-2xl md:text-4xl font-medium md:leading-normal">Ten tell-tale signs you need to get a new startup.</p>
+            <p class="text-white text-2xl md:text-4xl font-medium">Ten tell-tale signs you need to get a new startup.</p>
 
             <p class="text-white font-normal mb-4">No visited raising gravity outward subject my cottage Mr be. Hold do at tore in park feet near my case.</p>
 
@@ -141,50 +136,50 @@
             </div>
           </div>
         </div>
-        <div class="h-full md:h-full rounded">
-          <div class="grid md:grid-cols-2 md:grid-rows-2 gap-6 h-full">
-            <div class="min-h-[260px] h-full md:col-span-2 rounded">
-              <div class="h-full bg-hottub bg-center bg-cover rounded-xl flex flex-col items-start justify-end p-4 md:p-10">
-                <button class="bg-cpurple-500 text-white items-center rounded text-tiny px-2 mb-2">• Technology</button>
+        <div class="h-full md:h-[560px] rounded">
+          <div class="grid lg:grid-cols-2 lg:grid-rows-2 gap-6 h-full">
+            <div class="min-h-[260px] lg:min-h-[0] h-full md:col-span-2 rounded">
+              <div class="h-full bg-car bg-center bg-cover rounded-xl flex flex-col items-start justify-end p-4 md:p-8">
+                <button class="bg-green-500 text-white items-center rounded text-tiny px-2 mb-2">• Car</button>
 
-                <p class="text-white text-2xl font-medium md:leading-normal">Ten tell-tale signs you need to get a new startup.</p>
+                <p class="text-white text-calc font-medium">Double delight for Red Bull Racing Honda at damp Turkish Grand Prix</p>
 
                 <div class="hidden md:flex w-full justify-start items-center gap-4 text-white">
                   <span>by Kesler</span>
 
                   <span class="before:content-['•'] before:pr-5">Nov 15, 2021</span>
 
-                  <span class="before:content-['•'] before:pr-5">5 min read</span>
+                  <span class="hidden lg:visible before:content-['•'] before:pr-5">5 min read</span>
                 </div>
               </div>
             </div>
-            <div class="min-h-[260px] h-full rounded">
-              <div class="h-full bg-coin bg-center bg-cover rounded-xl flex flex-col items-start justify-end p-4 md:p-10">
-                <button class="bg-cpurple-500 text-white items-center rounded text-tiny px-2 mb-2">• Technology</button>
+            <div class="min-h-[260px] lg:min-h-[0] h-full rounded">
+              <div class="h-full bg-coin bg-center bg-cover rounded-xl flex flex-col items-start justify-end p-4 md:p-8">
+                <button class="bg-yellow-500 text-white items-center rounded text-tiny px-2 mb-2">• Coin</button>
 
-                <p class="text-white text-2xl font-medium md:leading-normal">Ten tell-tale signs you need to get a new startup.</p>
+                <p class="text-white text-calc font-medium">Bi çıkıyo bi düşüyo</p>
 
-                <div class="hidden md:flex w-full justify-start items-center gap-4 text-white">
+                <div class="hidden lg:flex w-full justify-start items-center gap-4 text-white">
                   <span>by Kesler</span>
 
                   <span class="before:content-['•'] before:pr-5">Nov 15, 2021</span>
 
-                  <span class="before:content-['•'] before:pr-5">5 min read</span>
+                  <span class="hidden lg:visible before:content-['•'] before:pr-5">5 min read</span>
                 </div>
               </div>
             </div>
-            <div class="min-h-[260px] h-full rounded">
-              <div class="h-full bg-food bg-center bg-cover rounded-xl flex flex-col items-start justify-end p-4 md:p-10">
-                <button class="bg-cpurple-500 text-white items-center rounded text-tiny px-2 mb-2">• Technology</button>
+            <div class="min-h-[260px] md:min-h-[0] h-full rounded">
+              <div class="h-full bg-food bg-center bg-cover rounded-xl flex flex-col items-start justify-end p-4 md:p-8">
+                <button class="bg-blue-500 text-white items-center rounded text-tiny px-2 mb-2">• Food</button>
 
-                <p class="text-white text-2xl font-medium md:leading-normal">Ten tell-tale signs you need to get a new startup.</p>
+                <p class="text-white text-calc font-medium md:leading-normal">Sıklıkla az az acıkıyorum.</p>
 
                 <div class="hidden md:flex w-full justify-start items-center gap-4 text-white">
                   <span>by Kesler</span>
 
                   <span class="before:content-['•'] before:pr-5">Nov 15, 2021</span>
 
-                  <span class="before:content-['•'] before:pr-5">5 min read</span>
+                  <span class="hidden lg:visible before:content-['•'] before:pr-5">5 min read</span>
                 </div>
               </div>
             </div>
@@ -192,5 +187,38 @@
         </div>
       </div>
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+    <script>
+      var tnsSlider = tns({
+        container: ".tiny-slider-inner",
+        mode: "carousel",
+        axis: "horizontal",
+        gutter: "0",
+        edgePadding: 0,
+        speed: 500,
+        autoWidth: false,
+        controls: true,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout: 9000,
+        autoplayHoverPause: true,
+        autoplayButton: false,
+        autoplayButtonOutput: false,
+        controlsPosition: top,
+        navPosition: top,
+        autoplayPosition: top,
+        controlsText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+        loop: true,
+        rewind: false,
+        autoHeight: false,
+        fixedWidth: false,
+        touch: true,
+        mouseDrag: true,
+        arrowKeys: true,
+        items: 1,
+      });
+    </script>
   </body>
 </html>
