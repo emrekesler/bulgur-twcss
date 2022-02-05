@@ -41,7 +41,8 @@ module.exports = {
           width: '100%',
           marginLeft: 'auto',
           marginRight: 'auto',
-
+          paddingLeft: '0.9rem',
+          paddingRight: '0.9rem',
           '@screen sm': {
             maxWidth: '96%',
           },
